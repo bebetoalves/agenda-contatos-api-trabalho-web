@@ -8,7 +8,7 @@ exports.addContato = async (req, res, next) => {
 
 exports.obterContatos = async (req, res, next) => {
   const allContatos = await db.Contato.findAll({
-    attributes: ['id', 'nome', 'endereco', 'email', 'telefone']
+    attributes: ['id', 'nome', 'endereco', 'email', 'telefone', 'createdAt']
   })
 
   res.status(200).send(allContatos)
