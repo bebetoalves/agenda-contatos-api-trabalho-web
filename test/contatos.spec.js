@@ -12,7 +12,7 @@ test('um contato pode ser criado', async (assert) => {
   }
 
   const response = await request(app)
-    .post('/salvar')
+    .post('/adicionar')
     .send(contato)
 
   assert.equal(response.statusCode, 201)
