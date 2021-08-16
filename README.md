@@ -1,7 +1,7 @@
-# Agenda de Contatos - Backend
+## Agenda de Contatos - Backend
 Este projeto consiste na terceira parte da disciplina Desenvolvimento de Software para WEB da Universidade Federal do Ceará.
 
-# Instruções
+## Instruções
 
 ### Instalação de dependências
 Para instalar as dependências do projeto execute o comando:
@@ -18,7 +18,7 @@ Para rodar os testes automatizados execute o seguinte comando:
 ```bash
 npm run test
 ```
-### Banco de Dados
+### Banco de dados
 Este projeto usa por padrão SQLite como banco de dados.
 
 Para rodar as migrations execute o comando:
