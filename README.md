@@ -1,35 +1,53 @@
-## Agenda de Contatos - Backend
-Este projeto consiste na terceira parte da disciplina Desenvolvimento de Software para WEB da Universidade Federal do Ceará.
+<h1 align="center">Simple Address Book - Backend</h1>
+<h4 align="center">This project was a challenge proposed in the course Software Development for WEB at the Federal University of Ceará.</h4>
+<p  align="center">
+    <a  href="#rocket-technologies">Technologies</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+    <a  href="#information_source-how-to-use">How To Use</a>&nbsp;&nbsp;&nbsp;
+</p>
 
-## Instruções
+## :rocket: Technologies
 
-### Instalação de dependências
-Para instalar as dependências do projeto execute o comando:
-```bash
-npm install
-```	
-### Servidor
-Para iniciar o servidor execute o seguinte comando:
-```bash
-npm run start
-```	
-### Testes
-Para rodar os testes automatizados execute o seguinte comando:
-```bash
-npm run test
-```
-### Banco de dados
-Este projeto usa por padrão SQLite como banco de dados.
+In this Node application I created an API that provides an endpoint capable of creating, listing, updating and deleting contacts.
 
-Para rodar as migrations execute o comando:
+- [Express](https://expressjs.com/pt-br/)
+- [Sequelize](https://sequelize.org/)
+- [nodemon](https://nodemon.io/)
+- [Japa](https://japa.dev/)
+
+## :information_source: How To Use
+
+To run this project, you need to clone this repository and follow the steps below:
+
 ```bash
-npx sequelize db:migrate
+# Clone this repository
+
+$ git clone https://github.com/bebetoalves/simple-address-book-backend
+
+# Go into the repository
+
+$ cd simple-address-book-backend
+
+# Install packages
+
+$ yarn install or npm install
+
+# Run migrations
+
+$ npx sequelize db:migrate
+
+# Seed database
+
+$ npx sequelize db:seed:all
+
+# Run tests
+
+$ yarn run test or npm run test
+
+# Start development server
+
+$ yarn dev or npm run dev
 ```
-Para preencher o banco de dados com dados fictícios execute o comando:
-```bash
-npx sequelize db:seed:all
-```
-Para mais comandos execute o comando:
-```bash
-npx sequelize db --help
-```
+
+---
+
+Made with :coffee: by Bebeto Alves
